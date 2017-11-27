@@ -29,7 +29,6 @@ class App extends React.Component {
 
     };
 
-    this.state.authenticator();
     this.refreshData = this.refreshData.bind(this);
   }
 
@@ -48,6 +47,7 @@ class App extends React.Component {
         firstThread: res.data[0],
         /* esline-enable */
       }));
+    this.state.authenticator();
   }
 
 

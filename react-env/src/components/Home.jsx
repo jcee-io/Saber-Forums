@@ -26,6 +26,7 @@ class Home extends React.Component {
           threads={this.props.appState.threads}
         />
         <Entry
+          auth={this.props.appState.authenticator}
           username={this.props.appState.user}
           thread={this.state.thread || this.props.appState.firstThread}
           refreshData={this.props.refreshData}
